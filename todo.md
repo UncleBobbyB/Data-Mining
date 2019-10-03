@@ -15,8 +15,14 @@ Remove points whose distance between adjacent points are larger than 2km.
 ## Laggy points
 Remove points whose time spans with adjacent points are longer than 10min.
 ## Stationary points
-Remove tracks whose point moves less than 50m within 30min.
+Remove tracks whose point moves less than 50m within 30min. -- too hard
+Instead, remove all points with speed being 0.
 ## Waiting points
 Remove points who appears to be waiting for passengers (according to passenger
 status).
+
+# Assumptions
+## Independency
+Data within different days don't affect each other, which means they're
+independent.
 
